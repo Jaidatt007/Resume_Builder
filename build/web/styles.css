@@ -1,0 +1,110 @@
+/* Background image */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://cdn.pixabay.com/photo/2018/09/04/10/06/man-3653346_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(4px);
+}
+
+/* Container for entire form */
+.container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/* General block styling */
+.block {
+  padding: 8%;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.center-btn {
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+
+/* Section-specific colors */
+.personal {
+  background-color: #fef3c7;
+}
+.education {
+  background-color: #e0f7fa;
+}
+.projects {
+  background-color: #ede7f6;
+}
+.skills {
+  background-color: #e8f5e9;
+}
+
+h2 {
+  text-align: center;
+  margin: 4%;
+  color: #2c3e50;
+}
+
+h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #00b894;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #00997a;
+}
+
+.submit-btn {
+  background-color: #6c5ce7;
+}
+
+.submit-btn:hover {
+  background-color: #5a4bcf;
+}
+
+.dynamic-input {
+  margin-bottom: 15px;
+}

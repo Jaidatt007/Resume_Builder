@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Resume Builder</h2>
+
+    <!-- 📝 Form to Submit Resume -->
+    <form action="submitResume" method="post">
+      <!-- 1. Personal Details Block -->
+      <div class="block personal">
+        <h3 class="section-title">1) Personal Details</h3>
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+        <label>Domain</label>
+        <input type="text" name="domain" placeholder="Enter your domain" required>
+
+        <label>LinkedIn</label>
+        <input type="url" name="linkedin" placeholder="LinkedIn profile link">
+
+        <label>GitHub</label>
+        <input type="url" name="github" placeholder="GitHub profile link">
+      </div>
+
+      <!-- 2. Educational Details Block -->
+      <div class="block education">
+        <h3 class="section-title">2) Educational Details</h3>
+        <label>HSC Score</label>
+        <input type="text" name="hsc" placeholder="Enter HSC score">
+
+        <label>Graduation Score</label>
+        <input type="text" name="grad" placeholder="Enter Graduation score">
+      </div>
+
+      <!-- 3. Project Details Block -->
+      <div class="block projects">
+        <h3 class="section-title">3) Project Details</h3>
+        <div class="dynamic-input">
+          <label>Project Name</label>
+          <input type="text" name="project" placeholder="Enter project name">
+
+          <label>Project Description</label>
+          <textarea rows="3" name="projDesc" placeholder="Enter project description"></textarea>
+        </div>
+      </div>
+
+      <!-- 4. Technical Skills Block -->
+      <div class="block skills">
+        <h3 class="section-title">4) Technical Skills</h3>
+        <div class="dynamic-input">
+          <label>Programming Language</label>
+          <input type="text" name="skill" placeholder="Enter coding language">
+        </div>
+      </div>
+
+      <div class="center-btn">
+        <!-- Submit Resume -->
+        <button type="submit" class="btn submit-btn">Generate Resume</button>
+      </div>
+    </form>
+
+    <!-- 🌐 View All Resumes Button -->
+    <form action="allresumes.jsp" method="get" class="center-btn">
+      <button type="submit" class="btn submit-btn">View All Resume</button>
+    </form>
+  </div>
+
+</body>
+</html>
